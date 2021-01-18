@@ -63,3 +63,16 @@ body {
     background-position: centre;
     background-repeat: no-repeat;
 }
+
+.img-text-wrapper {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-left: 175px;
+    padding-top: 100px;
+}
+
