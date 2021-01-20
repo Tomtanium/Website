@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>Tomtanium</title>
-		<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="styles-qualifications.css">
 	</head>
 
 	<body>
@@ -32,7 +32,7 @@
                         <div class="qualifications-img-background" style="background-image:url(images/university.jpg)"></div>
 
                         <div class="img-heading-wrapper">
-                           <div class="qualification-heading" style="background-color: white"><h1>Qualifications</h1></div>
+                           <div class="qualification-heading"><h1>Qualifications</h1></div>
                         </div>
                     </div>
 
@@ -64,19 +64,22 @@
                     </div>
                 </div>
             </div>
-	<script>
-		const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
 
-		portfolioItems.forEach(portfolioItem => {
-			portfolioItem.addEventListener('mouseover', () => {
-				console.log(portfolioItem.childNodes[1].classList.add('img-darken'));
-			})
-		})
+            <div class="container">
+                <div class="nav-wrapper">
+                    <div class="left-side">
+                        <div class="nav-link-wrapper">
+                            <a href="https://github.com/Tomtanium">GitHub</a>
+                        </div>
+                    </div>
 
-		portfolioItems.forEach(portfolioItem => {
-			portfolioItem.addEventListener('mouseout', () => {
-				console.log(portfolioItem.childNodes[1].classList.remove('img-darken'));
-			})
-		})
-	</script>
+                    <div class="right-side">
+                        <div class="brand">
+                            <div>Copyleft 2020 (Some Rights Reserved)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
