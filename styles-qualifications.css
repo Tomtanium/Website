@@ -48,23 +48,19 @@ body {
 
 /* Qualifications page */
 
-.qualifications-items-wrapper {
-    display: grid;
-    grid-template-rows: 1fr;
-}
-
-
 .qualifications-title-wrapper {
     position: relative;
 }
 
 .qualifications-item-wrapper {
+    padding-top: 10px;
+    height: 400px;
     position: relative;
-    padding-left: 100px;
+    background-color: white;
 }
 
 .qualifications-img-background {
-    height: 100px;
+    height: 800px;
     width: 100%;
     background-size: cover;
     background-position: center center;
@@ -80,11 +76,18 @@ body {
     align-items: center;
     height: 100%;
     text-align: center;
-    padding-left: 100px;
-    padding-right: 100px;
 }
 
 .qualification-heading {
     color: lightseagreen;
     font-weight: 600;
+}
+
+.qualification-text-wrapper {
+    padding: 10px;
+}
+
+.qualifications-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }

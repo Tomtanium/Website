@@ -47,6 +47,7 @@ body {
 }
 
 /* Portfolio Styles */
+
 .portfolio-items-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -54,6 +55,12 @@ body {
 
 .portfolio-item-wrapper {
     position: relative;
+    padding: 20px;
+}
+
+.portfolio-item-wrapper:hover {
+    transition: 1s;
+    padding: 0px;
 }
 
 .portfolio-img-background {
