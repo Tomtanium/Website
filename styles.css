@@ -1,5 +1,6 @@
 header {
     text-align: center;
+    color white;
 }
 
 body {
@@ -7,6 +8,6 @@ body {
     color: white;
 }
 
-.nav-link-wrapper a:hover {
-    border-bottom: 1px solid white;
+.nav-link-wrapper a {
+    color: white;
 }
