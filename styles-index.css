@@ -65,6 +65,11 @@ body {
     background-repeat: no-repeat;
 }
 
+.portfolio-item-wrapper:hover .portfolio-img-background {
+    transition: 1s;
+    filter:brightness(10%);
+}
+
 .img-text-wrapper {
     position: absolute;
     top: 0;
@@ -100,10 +105,6 @@ body {
     color: lightseagreen;
 }
 
-.img-darken {
-    transition: 1s;
-    filter: brightness(10%);
-}
 
 /* About page */
 
@@ -115,6 +116,10 @@ body {
 
 .profile-image-wrapper img {
     width: 100%;
+}
+
+.profile-image-wrapper:hover {
+    filter: brightness(10%);
 }
 
 .profile-content-wrapper {
