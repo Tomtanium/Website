@@ -53,16 +53,13 @@ body {
     position: relative;
 }
 
-.blog-item-banner {
+.img-item-wrapper {
     height: 700px;
     position: relative;
     padding: 10px;
-}
-
-.blog-item-wrapper {
-    height: 700px;
-    position: relative;
-    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .blog-img-background {
@@ -92,7 +89,7 @@ body {
 
 .blog-container {
     display: grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 1fr 7fr;
     padding-top: 10px;
     padding-left: 10px;
     padding-right: 10px;
@@ -124,8 +121,8 @@ body {
     top: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     height: 100%;
     text-align: center;
+    padding: 10px;
 }
