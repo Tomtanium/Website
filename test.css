@@ -23,3 +23,11 @@ details li {
   margin-left: 30px;
   margin-top: 10px;
 }
+
+details > summary {
+  list-style: none;
+}
+
+details > summary::marker {
+  display: none;
+}
