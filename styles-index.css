@@ -30,6 +30,7 @@ body {
     height: 22px;
     border-bottom: 1px solid transparent;
     transition: border-bottom 0.5s;
+    position: relative;
 }
 
 .nav-link-wrapper a {
@@ -55,6 +56,7 @@ body {
 
 .portfolio-item-wrapper {
     position: relative;
+    height: 350px;
 }
 
 .portfolio-img-background {
@@ -89,9 +91,6 @@ body {
     margin-bottom: 20px;
 }
 
-.a {
-  height: 350px;
-}
 
 .img-text-wrapper:hover .logo-wrapper img {
     transition: 1s;
@@ -164,3 +163,4 @@ details > summary {
 details > summary::marker {
   display: none;
 }
+
