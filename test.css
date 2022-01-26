@@ -19,6 +19,10 @@ details ul {
   border-radius: 0 0 4px 4px;
 }
 
+ul {
+  width: 1000px;
+}
+
 details li {
   margin-left: 30px;
   margin-top: 10px;
