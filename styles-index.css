@@ -137,6 +137,7 @@ body {
 details {
   color: #ddd;
   border-radius: 0px;
+  transition: padding 0.2s;
   margin-bottom: 0px;
 }
 
@@ -144,15 +145,15 @@ summary:focus {
   outline: none;
 }
 details ul {
-  background: #ddd;
+  background: white;
   margin: 0;
   color: black;
   border-radius: 0 0 4px 4px;
 }
 
 ul {
-  padding: 100px;
-  width: 258%;
+  padding: 50px;
+  height: 100px;
 }
 
 
