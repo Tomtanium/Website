@@ -1,37 +1,65 @@
-details {
-  background: rebeccapurple;
-  color: #ddd;
-  width: 300px;
-  border-radius: 4px;
-  margin-bottom: 5px;
+body {
+  margin: 0px;
 }
-summary {
-  padding: 10px;
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
 }
-summary:focus {
-  outline: none;
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 38px;
 }
-details ul {
-  background: #ddd;
-  margin: 0;
+
+.left-side {
+  display: flex;
+}
+
+.nav-link-wrapper > .left-side > div {
+  font-size: 0.9em;
+  text-transform: uppercase;
+}
+
+.nav-link-wrapper {
+  margin-right: 20px;
+  height: 22px;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.5s;
+  position: relative;
+}
+
+.nav-link-wrapper a {
+  color: #8a8a8a;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover {
+  border-bottom: 1px solid black;
+}
+
+.nav-link-wrapper a:hover {
   color: black;
-  padding: 10px;
-  border-radius: 0 0 4px 4px;
 }
 
-ul {
-  width: 1000px;
+.item1 {grid-area: About;}
+
+.item2 {grid-area: Portfolio;}
+
+.item3 {grid-area: Blog;}
+
+.item4 {
+  grid-area: Drawer;
 }
 
-details li {
-  margin-left: 30px;
-  margin-top: 10px;
+.grid-container {
+  display: grid;
+  grid-template-areas: 'About Portfolio Blog' 'Drawer Drawer Drawer';
+  background-color: #0000ff;
 }
 
-details > summary {
-  list-style: none;
-}
-
-details > summary::marker {
-  display: none;
+.grid-container > div {
+  text-align: center;
 }

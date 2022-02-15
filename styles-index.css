@@ -12,7 +12,7 @@ body {
 .nav-wrapper {
     display: flex;
     justify-content: space-between;
-    padding: 38px;
+    padding: 10px;
 }
 
 .left-side {
@@ -135,17 +135,19 @@ body {
 
 
 details {
-  color: #ddd;
+  color: #0000ff;
   border-radius: 0px;
   transition: padding 0.2s;
   margin-bottom: 0px;
+
 }
 
 summary:focus {
   outline: none;
 }
+
 details ul {
-  background: white;
+  background: blue;
   margin: 0;
   color: black;
   border-radius: 0 0 4px 4px;
