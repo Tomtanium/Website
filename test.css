@@ -44,11 +44,27 @@ body {
   color: black;
 }
 
-.item1 {grid-area: About;}
+.item1 {
+  grid-area: About;
+  height: 300px;
+  background-size: cover;
+  background-position: centre;
+  background-repeat: no-repeat;
+}
 
-.item2 {grid-area: Portfolio;}
+.item2 {
+  grid-area: Portfolio;
+  height: 300px;
+  background-size: cover;
+  background-position: centre centre;
+  background-repeat: no-repeat;
+}
 
-.item3 {grid-area: Blog;}
+.item3 {
+  grid-area: Blog;
+  height: 300px;
+  background: 50% / cover;
+}
 
 .item4 {
   grid-area: Drawer;
