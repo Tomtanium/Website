@@ -46,24 +46,20 @@ body {
 
 .item1 {
   grid-area: About;
-  height: 300px;
-  background-size: cover;
-  background-position: centre;
-  background-repeat: no-repeat;
+  height: 500px;
+  position: relative;
 }
 
 .item2 {
   grid-area: Portfolio;
-  height: 300px;
-  background-size: cover;
-  background-position: centre centre;
-  background-repeat: no-repeat;
+  height: 500px;
+  position: relative;
 }
 
 .item3 {
   grid-area: Blog;
-  height: 300px;
-  background: 50% / cover;
+  height: 500px;
+  position: relative;
 }
 
 .item4 {
@@ -78,4 +74,62 @@ body {
 
 .grid-container > div {
   text-align: center;
+}
+
+.img-text-wrapper {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  text-align: center;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.logo-wrapper img {
+  filter: brightness(0%);
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+.img-text-wrapper:hover .logo-wrapper img {
+  transition: 1s;
+  filter: brightness(100%);
+}
+
+.img-text-wrapper .subtitle {
+  transition: 1s;
+  font-weight: 600;
+  color: transparent;
+}
+
+.img-text-wrapper:hover .subtitle {
+  font-weight: 600;
+  color: lightseagreen;
+}
+
+.item1:hover .background-image {
+  transition: 1s;
+  filter:brightness(10%);
+}
+
+.item2:hover .background-image {
+  transition: 1s;
+  filter:brightness(10%);
+}
+
+.item3:hover .background-image {
+  transition: 1s;
+  filter:brightness(10%);
+}
+
+.background-image {
+  height: 500px;
+  width: 100%;
+  background-size: cover;
+  background-position: centre;
+  background-repeat: no-repeat;
 }
