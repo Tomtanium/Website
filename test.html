@@ -64,9 +64,26 @@
             </div>
           </div>
 
-          <div class="item4">beep</div>
+          <div class="item4">
+            <div id="about" class="hidden">About</div>
+            <div id="portfolio" class="hidden">Portfolio</div>
+            <div id="blog" class="hidden">Blog</div>
+          </div>
         </div>
       </div>
     </div>
+
+    <script type = "text/javascript">
+      document.querySelector('.item1').addEventListener('click', () => {
+          document.querySelector('.item4').classList.contains('collapsed', () => {
+              document.querySelector('.item4').classList.remove('collapsed');});
+          document.querySelector('.item4').classList.toggle('collapsed');});
+      
+
+
+    </script>
+
   </body>
+
+
 </html>

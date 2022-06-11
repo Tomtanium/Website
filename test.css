@@ -52,18 +52,37 @@ body {
 
 .item2 {
   grid-area: Portfolio;
-  height: 500px;
+  height: 300px;
   position: relative;
 }
 
 .item3 {
   grid-area: Blog;
-  height: 500px;
+  height: 300px;
   position: relative;
 }
 
 .item4 {
   grid-area: Drawer;
+  transition: max-height 0.5s ease-in-out;
+  overflow: hidden;
+  height: 100px;
+  max-height: 0;
+}
+
+.collapsed {
+  max-height: 100px;
+}
+
+.hidden {
+  transition: max-height 0.5s ease-in-out;
+  overflow: hidden;
+  height: 0;
+  max-height: 0;
+}
+
+.shown {
+  height: 100px;
 }
 
 .grid-container {
