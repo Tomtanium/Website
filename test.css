@@ -40,13 +40,13 @@ body {
   border-bottom: 1px solid black;
 }
 
-.nav-link-wrapper a:hover {
+.nav-link-wrapper:hover a {
   color: black;
 }
 
 .item1 {
   grid-area: About;
-  height: 500px;
+  height: 300px;
   position: relative;
 }
 
@@ -66,29 +66,18 @@ body {
   grid-area: Drawer;
   transition: max-height 0.5s ease-in-out;
   overflow: hidden;
-  height: 100px;
+  height: 300px;
   max-height: 0;
+  background-color: #0000ff;
 }
 
 .collapsed {
-  max-height: 100px;
-}
-
-.hidden {
-  transition: max-height 0.5s ease-in-out;
-  overflow: hidden;
-  height: 0;
-  max-height: 0;
-}
-
-.shown {
-  height: 100px;
+  max-height: 300px;
 }
 
 .grid-container {
   display: grid;
-  grid-template-areas: 'About Portfolio Blog' 'Drawer Drawer Drawer';
-  background-color: #0000ff;
+  grid-template-areas: 'About Portfolio Blog' 'Drawer Drawer Drawer' 'Drawer Drawer Drawer' 'Drawer Drawer Drawer';
 }
 
 .grid-container > div {
@@ -102,7 +91,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 500px;
+  height: 300px;
   text-align: center;
   padding-left: 100px;
   padding-right: 100px;
@@ -146,9 +135,15 @@ body {
 }
 
 .background-image {
-  height: 500px;
+  height: 300px;
   width: 100%;
   background-size: cover;
   background-position: centre;
   background-repeat: no-repeat;
+}
+
+.border {
+  outline: 10px solid blue;
+  transition: outline 0.5s ease-in-out;
+  outline-offset: -10px;
 }

@@ -15,7 +15,15 @@
           </div>
 
           <div class="nav-link-wrapper">
-            <a href="about.html">Contact</a>
+            <a href="about.html">About</a>
+          </div>
+
+          <div class="nav-link-wrapper">
+            <a href="portfolio.html">Portfolio</a>
+          </div>
+
+          <div class="nav-link-wrapper">
+            <a href="blog.html">Blog</a>
           </div>
         </div>
 
@@ -29,7 +37,7 @@
       <div class="content-wrapper">
         <div class="grid-container">
           <div class="item1">
-            <div class="background-image" style="background-image:url(images/university.jpg)"></div>
+            <div id="about_image" class="background-image" style="background-image:url(images/university.jpg)"></div>
 
             <div class="img-text-wrapper">
               <div class="logo-wrapper">
@@ -41,7 +49,7 @@
           </div>
 
           <div class="item2">
-            <div class="background-image" style="background-image:url(images/coding.jpg)"></div>
+            <div id="portfolio_image" class="background-image" style="background-image:url(images/coding.jpg)"></div>
 
             <div class="img-text-wrapper">
               <div class="logo-wrapper">
@@ -53,7 +61,7 @@
           </div>
 
           <div class="item3">
-            <div class="background-image" style="background-image:url(images/night.jpg)"></div>
+            <div id="blog_image" class="background-image" style="background-image:url(images/night.jpg)"></div>
 
             <div class="img-text-wrapper">
               <div class="logo-wrapper">
@@ -64,26 +72,81 @@
             </div>
           </div>
 
-          <div class="item4">
-            <div id="about" class="hidden">About</div>
-            <div id="portfolio" class="hidden">Portfolio</div>
-            <div id="blog" class="hidden">Blog</div>
+          <div id="about" class="item4">
+            <ul>
+              <li>Hi, I'm Thomas. I'm a northerner living in Wakefield and I make all sorts of online content. I'm a programmer, training accountant and professional burger flipper (for an income) & I love to read books about religion and philosophy.</li>
+              <li><a href="about.html">Read More</a></li>
+            </ul>
+          </div>
+
+          <div id="portfolio" class="item4">
+            <div>Portfolio</div>
+          </div>
+
+          <div id="blog" class="item4">
+            <div>Blog</div>
           </div>
         </div>
       </div>
     </div>
 
     <script type = "text/javascript">
-      document.querySelector('.item1').addEventListener('click', () => {
-          document.querySelector('.item4').classList.contains('collapsed', () => {
-              document.querySelector('.item4').classList.remove('collapsed');});
-          document.querySelector('.item4').classList.toggle('collapsed');});
-      
 
+
+      document.querySelector('.item1').addEventListener('click', () => {
+
+          let about = document.getElementById('about').classList.contains('collapsed');
+          let portfolio = document.getElementById('portfolio').classList.contains('collapsed');
+          let blog = document.getElementById('blog').classList.contains('collapsed');
+
+          if (portfolio == true) {
+              document.getElementById('portfolio').classList.remove('collapsed');
+              document.getElementById('portfolio_image').classList.remove('border');
+          }
+
+          if (blog == true) {
+              document.getElementById('blog').classList.remove('collapsed');
+              document.getElementById('blog_image').classList.remove('border');
+          }
+          document.getElementById('about').classList.toggle('collapsed');
+          document.getElementById('about_image').classList.toggle('border');});
+
+      document.querySelector('.item2').addEventListener('click', () => {
+
+          let about = document.getElementById('about').classList.contains('collapsed');
+          let portfolio = document.getElementById('portfolio').classList.contains('collapsed');
+          let blog = document.getElementById('blog').classList.contains('collapsed');
+
+          if (about == true) {
+              document.getElementById('about').classList.remove('collapsed');
+              document.getElementById('about_image').classList.remove('border');
+          }
+
+          if (blog == true) {
+              document.getElementById('blog').classList.remove('collapsed');
+              document.getElementById('blog_image').classList.remove('border');
+          }
+          document.getElementById('portfolio').classList.toggle('collapsed');
+          document.getElementById('portfolio_image').classList.toggle('border');});
+
+      document.querySelector('.item3').addEventListener('click', () => {
+
+          let about = document.getElementById('about').classList.contains('collapsed');
+          let portfolio = document.getElementById('portfolio').classList.contains('collapsed');
+          let blog = document.getElementById('blog').classList.contains('collapsed');
+
+          if (portfolio == true) {
+              document.getElementById('portfolio').classList.remove('collapsed');
+              document.getElementById('portfolio_image').classList.remove('border');
+          }
+
+          if (about == true) {
+              document.getElementById('about').classList.remove('collapsed');
+              document.getElementById('about_image').classList.remove('border');
+          }
+          document.getElementById('blog').classList.toggle('collapsed');
+          document.getElementById('blog_image').classList.toggle('border');});
 
     </script>
-
   </body>
-
-
 </html>
