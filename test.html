@@ -75,16 +75,57 @@
           <div id="about" class="item4">
             <ul>
               <li>Hi, I'm Thomas. I'm a northerner living in Wakefield and I make all sorts of online content. I'm a programmer, training accountant and professional burger flipper (for an income) & I love to read books about religion and philosophy.</li>
-              <li><a href="about.html">Read More</a></li>
+              <li><div class="nav-link-wrapper"><a href="about.html">Read More</a></div></li>
             </ul>
           </div>
 
           <div id="portfolio" class="item4">
-            <div>Portfolio</div>
+            <ul>
+              <li>I make a lot of online content. Here is a brief overview of all my stuff.</li>
+              <li><div class="nav-link-wrapper"><a href="porfolio.html">Read More</a></div></li>
+            </ul>
           </div>
 
           <div id="blog" class="item4">
-            <div>Blog</div>
+            <ul>
+              <li>Here is a blog where I post any brief thoughts that I might have from time to time.</li>
+              <li><div class="nav-link-wrapper"><a href="blog.html">Read More</a></div></li>
+            </ul> </div>
+
+          <div class="item5">
+            <div id="about_image" class="background-image" style="background-image:url(images/university.jpg)"></div>
+
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="images/scholer.png">
+              </div>
+
+              <div class="subtitle">About Thomas</div>
+            </div>
+          </div>
+
+          <div class="item6">
+            <div id="portfolio_image" class="background-image" style="background-image:url(images/coding.jpg)"></div>
+
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="images/scholer.png">
+              </div>
+
+              <div class="subtitle">Portfolio</div>
+            </div>
+          </div>
+
+          <div class="item7">
+            <div id="blog_image" class="background-image" style="background-image:url(images/night.jpg)"></div>
+
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="images/scholer.png">
+              </div>
+
+              <div class="subtitle">Blog</div>
+            </div>
           </div>
         </div>
       </div>
@@ -101,15 +142,18 @@
 
           if (portfolio == true) {
               document.getElementById('portfolio').classList.remove('collapsed');
-              document.getElementById('portfolio_image').classList.remove('border');
+              document.getElementById('portfolio').classList.remove('border-yellow');
+              document.getElementById('portfolio_image').classList.remove('border-yellow');
           }
 
           if (blog == true) {
               document.getElementById('blog').classList.remove('collapsed');
-              document.getElementById('blog_image').classList.remove('border');
+              document.getElementById('blog').classList.remove('border-red');
+              document.getElementById('blog_image').classList.remove('border-red');
           }
           document.getElementById('about').classList.toggle('collapsed');
-          document.getElementById('about_image').classList.toggle('border');});
+          document.getElementById('about').classList.toggle('border-blue');
+          document.getElementById('about_image').classList.toggle('border-blue');});
 
       document.querySelector('.item2').addEventListener('click', () => {
 
@@ -119,15 +163,18 @@
 
           if (about == true) {
               document.getElementById('about').classList.remove('collapsed');
-              document.getElementById('about_image').classList.remove('border');
+              document.getElementById('about').classList.remove('border-blue');
+              document.getElementById('about_image').classList.remove('border-blue');
           }
 
           if (blog == true) {
               document.getElementById('blog').classList.remove('collapsed');
-              document.getElementById('blog_image').classList.remove('border');
+              document.getElementById('blog').classList.remove('border-red')
+              document.getElementById('blog_image').classList.remove('border-red');
           }
           document.getElementById('portfolio').classList.toggle('collapsed');
-          document.getElementById('portfolio_image').classList.toggle('border');});
+          document.getElementById('portfolio').classList.toggle('border-yellow');
+          document.getElementById('portfolio_image').classList.toggle('border-yellow');});
 
       document.querySelector('.item3').addEventListener('click', () => {
 
@@ -137,15 +184,18 @@
 
           if (portfolio == true) {
               document.getElementById('portfolio').classList.remove('collapsed');
-              document.getElementById('portfolio_image').classList.remove('border');
+              document.getElementById('portfolio').classList.remove('border-yellow');
+              document.getElementById('portfolio_image').classList.remove('border-yellow');
           }
 
           if (about == true) {
               document.getElementById('about').classList.remove('collapsed');
-              document.getElementById('about_image').classList.remove('border');
+              document.getElementById('about').classList.remove('border-blue');
+              document.getElementById('about_image').classList.remove('border-blue');
           }
           document.getElementById('blog').classList.toggle('collapsed');
-          document.getElementById('blog_image').classList.toggle('border');});
+          document.getElementById('blog').classList.toggle('border-red');
+          document.getElementById('blog_image').classList.toggle('border-red');});
 
     </script>
   </body>
